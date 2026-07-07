@@ -9,6 +9,11 @@ img{
     max-width: 100%;
 }
 
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+
 nav{
     display: flex;
     justify-content: space-between;
@@ -65,10 +70,7 @@ nav ul li a{
     font-size: 20px;
 }
 
-.container{
-    max-width: 1200px;
-    margin: auto;
-}
+/* Banner Section */
 
 .banner-root{
     padding: 20px 0px;
@@ -96,6 +98,8 @@ nav ul li a{
     margin-top: 10px;
 }
 
+/* about  me section */
+
 .about-parent{
     background-color: #fff8f3;
     margin :70px auto;
@@ -118,4 +122,30 @@ nav ul li a{
     background-color: #f8eee7;
     padding: 10px;
     border-radius: 10px;
+}
+
+/* What I Do section */
+
+.what-i-do{
+    margin-top: 60px auto;
+    text-align: center;
+}
+
+.card-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.card-container .what-i-do-card{
+    background-color: #f8eee7;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    color: #585858
+}
+
+.what-i-do-card h2{
+    margin: 10px 0;
 }
