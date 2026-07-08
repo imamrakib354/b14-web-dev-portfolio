@@ -149,3 +149,43 @@ nav ul li a{
 .what-i-do-card h2{
     margin: 10px 0;
 }
+
+/* My resume section */
+.resume{
+    margin-top: 60px;
+    text-align: center;
+}
+
+.resume h1{
+    margin-bottom: 60px;
+}
+
+.summary-of-resume-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.common-edu-exp{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    text-align: left;
+    padding-right: 10px;
+}
+
+.uni-year{
+    color: #585858;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+.education h3{
+    text-align: left;
+}
+
+.experience h3{
+    text-align: left;
+}
+
