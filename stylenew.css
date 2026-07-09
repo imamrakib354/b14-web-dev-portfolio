@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    font-family: "Open Sans", sans-serif;
+}
+
+img{
+    max-width: 100%;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding : 12px 0px;
+}
+
+.common-btn{
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #fd6e0a;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.outline-btn{
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22px;
+    color: #fd6e0a;
+    border: 2px solid #fd6e0a;
+    cursor: pointer;
+}
+
+.logo{
+    color: rgb(24, 22, 22);
+    font-size: 32px;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+.logo-r{
+    color: #fd6e0a;;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgb(16, 15, 15);
+    padding: 0px 20px;
+    font-size: 20px;
+}
+
+/* Banner Section */
+
+.banner-root{
+    padding: 20px 0px;
+    background-color:#fff8f3;
+}
+
+.Banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-banner h2{
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.left-banner-p1{
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.banner-btn-parent{
+    margin-top: 10px;
+}
+
+/* about  me section */
+
+.about-parent{
+    background-color: #fff8f3;
+    margin :70px auto;
+    border-radius: 10px;
+    padding: 75px;
+    text-align: center;
+}
+
+.about-parent p{
+    margin : 10px 0;
+}
+
+.about-info{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.about-info .box{
+    background-color: #f8eee7;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* What I Do section */
+
+.what-i-do{
+    margin-top: 60px auto;
+    text-align: center;
+}
+
+.card-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.card-container .what-i-do-card{
+    background-color: #f8eee7;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    color: #585858
+}
+
+.what-i-do-card h2{
+    margin: 10px 0;
+}
+
+/* My resume section */
+.resume{
+    margin-top: 60px;
+    text-align: center;
+}
+
+.resume h1{
+    margin-bottom: 60px;
+}
+
+.summary-of-resume-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.common-edu-exp{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    text-align: left;
+    padding-right: 10px;
+}
+
+.uni-year{
+    color: #585858;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+.education h3{
+    text-align: left;
+}
+
+.experience h3{
+    text-align: left;
+}
+
+/* Gallery Section */
+
+.gallery-parent{
+    margin-top: 40px;
+    text-align: center;
+}
+
+.gallery{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 12px;
+    grid-auto-rows: 250px;
+    grid-template-areas:
+        "one two three"
+        "four two six"
+        "four five six";
+}
+.gallery img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.box-1{
+    grid-area: one;
+}
+.box-2{
+    grid-area: two;   
+}
+.box-3{
+    grid-area: three;
+    
+}
+.box-4{
+    grid-area: four;
+}
+.box-5{
+    grid-area: five;   
+}
+.box-6{
+    grid-area: six;
+}
+
+/* Footer Section */
+
+.footer-sec{
+    text-align: center;
+    margin-top: 70px;
+    display: grid;
+    justify-content: space-between;
+    gap: 40px;
+    grid-template-columns: repeat(2,1fr);
+    background-color:#fff8f3;
+}
+
+.footer-left-p{
+    margin: 10px 20px;
+}
+
+footer form{
+    padding: 20px;
+}
+
+footer form input,footer form textarea{
+    border: none;
+    outline: none;
+    background-color: white;
+    border-radius: 4px;
+    padding: 8px 15px;
+    display: block;
+    width: 95%;
+    margin-bottom: 8px;
+}
+
+.btn-footer{
+    margin-top: 10px;
+}
+
+.footer-icon{
+    color: #fd6e0a;
+    font-size: 25px;
+}
