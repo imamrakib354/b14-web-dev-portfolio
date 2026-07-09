@@ -233,3 +233,39 @@ nav ul li a{
 .box-6{
     grid-area: six;
 }
+
+/* Footer Section */
+
+.footer-sec{
+    text-align: center;
+    margin-top: 70px;
+    display: grid;
+    justify-content: space-between;
+    gap: 40px;
+    grid-template-columns: repeat(2,1fr);
+    background-color:#fff8f3;
+}
+
+.footer-left-p{
+    margin: 10px 20px;
+}
+
+footer form{
+    padding: 20px;
+}
+
+footer form input,footer form textarea{
+    border: none;
+    outline: none;
+    background-color: white;
+    border-radius: 4px;
+    /* padding: 8px 15px; */
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.footer-icon{
+    color: #fd6e0a;
+    font-size: 25px;
+}
