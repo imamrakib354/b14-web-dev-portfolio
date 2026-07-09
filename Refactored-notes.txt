@@ -1,0 +1,311 @@
+=============================
+Portfolio Refactor Notes
+=============================
+
+Goal:
+Improve the code quality without changing the portfolio design.
+
+--------------------------------------------------
+1. Added box-sizing: border-box
+--------------------------------------------------
+
+Old:
+
+Elements calculated width without considering padding and border.
+
+Problem:
+
+Adding padding to inputs or divs increased their total width and sometimes caused overflow.
+
+New:
+
+*,
+*::before,
+*::after{
+    box-sizing:border-box;
+}
+
+Benefit:
+
+- Width remains fixed.
+- Padding stays inside the element.
+- Easier layout calculation.
+- Professional practice.
+
+--------------------------------------------------
+2. Created CSS Variables
+--------------------------------------------------
+
+Old:
+
+#fd6e0a written many times.
+
+New:
+
+:root{
+    --primary:#fd6e0a;
+}
+
+Benefit:
+
+Only one place to change colors.
+
+Makes maintenance much easier.
+
+--------------------------------------------------
+3. Improved Container
+--------------------------------------------------
+
+Old:
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+New:
+
+.container{
+    width:min(1200px,90%);
+    margin-inline:auto;
+}
+
+Benefit:
+
+Container automatically shrinks on smaller screens.
+
+Cleaner modern CSS.
+
+--------------------------------------------------
+4. Reusable Button Component
+--------------------------------------------------
+
+Old:
+
+.common-btn
+.outline-btn
+
+Both repeated many CSS properties.
+
+New:
+
+.btn
+.btn-primary
+.btn-outline
+
+Benefit:
+
+Less repeated code.
+
+Easy to create new buttons.
+
+--------------------------------------------------
+5. Better Class Naming
+--------------------------------------------------
+
+Old:
+
+.left-banner
+.right-banner
+
+New:
+
+.hero-content
+.hero-image
+
+Benefit:
+
+Names describe the purpose instead of location.
+
+Used in professional projects.
+
+--------------------------------------------------
+6. Added CSS Reset
+--------------------------------------------------
+
+New:
+
+*{
+    margin:0;
+    padding:0;
+}
+
+Benefit:
+
+Every browser starts from the same default style.
+
+--------------------------------------------------
+7. Used Variables for Colors
+--------------------------------------------------
+
+Old:
+
+#fd6e0a
+#757575
+#181818
+
+New:
+
+var(--primary)
+var(--gray)
+var(--dark)
+
+Benefit:
+
+Cleaner code.
+
+Easy theme changes.
+
+--------------------------------------------------
+8. Added Hover Effects
+--------------------------------------------------
+
+Old:
+
+Buttons changed instantly.
+
+New:
+
+transition:.3s;
+
+Benefit:
+
+Smooth animation.
+
+Looks more modern.
+
+--------------------------------------------------
+9. Improved Cards
+--------------------------------------------------
+
+Old:
+
+Only background color.
+
+New:
+
+box-shadow
+border-radius
+hover effect
+
+Benefit:
+
+Cards look more professional.
+
+--------------------------------------------------
+10. Removed Duplicate CSS
+--------------------------------------------------
+
+Old:
+
+Many classes repeated similar code.
+
+New:
+
+Reusable classes.
+
+Example:
+
+.resume-item
+
+instead of
+
+.edu-sec-1
+.edu-sec-2
+.edu-sec-3
+
+Benefit:
+
+Less CSS.
+
+Easier maintenance.
+
+--------------------------------------------------
+11. Better Image Styling
+--------------------------------------------------
+
+Added:
+
+img{
+    display:block;
+    max-width:100%;
+}
+
+Benefit:
+
+Removes unwanted white gap below images.
+
+Images become responsive.
+
+--------------------------------------------------
+12. Organized CSS
+--------------------------------------------------
+
+CSS now divided into sections.
+
+Example:
+
+Reset
+
+Variables
+
+Buttons
+
+Header
+
+Hero
+
+About
+
+Skills
+
+Resume
+
+Gallery
+
+Footer
+
+Benefit:
+
+Easy to find code later.
+
+Looks professional.
+
+--------------------------------------------------
+13. Cleaner Layout
+--------------------------------------------------
+
+Grid used where equal columns are needed.
+
+Flexbox used where items are arranged in one direction.
+
+Benefit:
+
+Correct use of CSS layout systems.
+
+--------------------------------------------------
+Things Not Yet Learned
+--------------------------------------------------
+
+The new CSS also contains:
+
+- Media Queries
+- :focus
+- :hover transitions
+- CSS Variables
+- Modern container sizing
+
+These topics will be learned later.
+
+Current focus:
+
+HTML
+Selectors
+Box Model
+Flexbox
+Grid
+Basic Responsive Thinking
+
+=============================
+End of Notes
+=============================
